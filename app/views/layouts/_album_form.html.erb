@@ -1,0 +1,9 @@
+<%= render "layouts/errors", :object => @album %>
+
+<%= form_for @album do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+  <%= f.submit %>
+<% end %>

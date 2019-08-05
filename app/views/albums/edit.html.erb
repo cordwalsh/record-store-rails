@@ -1,9 +1,3 @@
 <h1>Edit album</h1>
 
-<%= form_for @album do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :genre %>
-  <%= f.text_field :genre %>
-  <%= f.submit  %>
-<% end %>
+<%= render "layouts/album_form" %>
